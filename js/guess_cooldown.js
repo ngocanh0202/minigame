@@ -1,8 +1,8 @@
 var s = parseInt(document.getElementById("giay").textContent)
 function start(){
     document.getElementById("points").innerHTML = 0;
-    time();
     document.getElementById("stop").onclick = null;
+    time();
 }
 function time(){
     document.getElementById("giay").innerHTML = s;
