@@ -24,7 +24,7 @@ function start(){
 }
 function handle(){
     var c = a + b;
-    var inpu = parseInt(document.getElementById("ketqua").value);
+    var inpu = parseInt(document.getElementById("ketquain").value);
     var points = parseInt(document.getElementById("points").textContent);
     document.getElementById("points").innerHTML = point(c,inpu,points)+"";
     localStorage.setItem('Highest_score', point(c,inpu,points));
@@ -32,5 +32,6 @@ function handle(){
     b = Math.floor(Math.random() * 10);
     document.getElementById("o1").innerHTML = a
     document.getElementById("o2").innerHTML = b
+    document.getElementById("ketquain").value = ""
 }
 
