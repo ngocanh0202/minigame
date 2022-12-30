@@ -19,6 +19,9 @@ function point(c,inpu,p){
         }
     }
 }
+function start(){
+    document.getElementById("points").innerHTML = 0;
+}
 function handle(){
     var c = a + b;
     var inpu = parseInt(document.getElementById("ketqua").value);
