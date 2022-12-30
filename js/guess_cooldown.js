@@ -1,5 +1,10 @@
 var s = parseInt(document.getElementById("giay").textContent)
 function start(){
+    document.getElementById("points").innerHTML = 0;
+    time();
+    document.getElementById("stop").onclick = null;
+}
+function time(){
     document.getElementById("giay").innerHTML = s;
     if(s == 0){
         clearTimeout(timeout);
@@ -7,7 +12,6 @@ function start(){
     }
     timeout = setTimeout(function(){
         s--;
-        start(s);
+        time();
     }, 1000);
-    document.getElementById("stop").onclick = null;
 }
