@@ -1,0 +1,58 @@
+body{
+    background: rgb(46, 40, 97);
+}
+.general{
+    text-align: center;
+}
+h1,h2{
+    color: aliceblue;
+}
+li{
+    color: aliceblue;
+    margin-bottom: 15px;
+    list-style-type: none;
+
+}
+a{
+    color:bisque;
+}
+li:hover > a{
+    text-decoration: none;
+}
+label{
+    color: aliceblue;
+}
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+.general_guess{
+    margin-top: 100px;
+    text-align: center;
+}
+.general_guess input{
+    text-align: center;
+    height: 36px;
+    width: 40px;
+    font-size: 25px;
+}
+.general_guess label{
+    font-size: 30px;
+    margin-right: 20px;
+}
+.general_guess .ketqua{
+    position: relative;
+    top: 25px;
+    left: 250px;
+}
+.general_guess span{
+    color:aliceblue;
+    font-size: 30px;
+}
+.general_guess .time{
+    border: 3px;
+    color:aliceblue;
+}

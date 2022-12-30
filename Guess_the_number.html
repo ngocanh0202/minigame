@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/edit.css">
+</head>
+<body>
+    <div class="general_guess">
+        <div style="text-align: center;">
+            <h2 style="margin-bottom: 3px;">ĐẾM NGƯỢC TỪ 60S</h1>
+            <br>
+            <button id="stop" onclick="start()" style="background: #ff0090;">BẮT ĐẦU</button>
+            <br>
+            <br>
+            <div class="time">
+                <label id="giay" style="margin-right: 5px;">60</label><span>S</span>
+            </div>
+            
+        </div>
+        <h1>ĐOÁN KẾT QUẢ</h1>
+        <label id="o1">2</label>
+        <label id="tinh">+</label>
+        <label id="o2">2</label>
+        <label id="o3">=</label>
+        <input id="ketqua">
+        <br>
+        <br>
+        <button onclick="handle()" style="background-color:#70ff00a1;font-size: 25px;">SUBMIT</button>
+        <div class="ketqua">
+            <label>ĐIỂM</label><label id="points">0</label>
+        </div>
+    </div>
+    <script src="js/guess.js"></script>
+    <script src="js/guess_cooldown.js"></script>
+</body>
+</html>
