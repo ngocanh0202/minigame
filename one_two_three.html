@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kéo búa bao</title>
+    <link rel="stylesheet" href="css/edit.css">
+</head>
+<body>
+    <div class="general_guess">
+        <h1>KÉO BÚA BAO</h1>
+        <div class="keobuabao">
+            <div class="kbbcot1">
+                <div class="bao">
+                    <input type="image" id = "bao" src="img/bao.png" onclick="choose(3)">
+                </div>
+            </div>
+            <div id="kbbcot2">
+                <div class="bua">
+                    <input type="image" id = "bua" src="img/bua.png" onclick="choose(1)">
+                </div>
+            </div>
+            <div class="kbbcot3">
+                <div class="keo">
+                    <input type="image" id = "keo" src="img/keo.png" onclick="choose(2)">
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 75px;margin-left: 15px;">
+            <label id="ketqua"></label>
+        </div>
+        <br>
+        <br>
+        <div >
+            <img id="AI">
+        </div>
+        <div style="text-align: -webkit-center;margin-top: 35px;">
+            <button id="again" onclick="again()" style="height: 40px;
+                width: 120px;
+                font-size: 25px;
+                color: white;
+                background: red;
+                display: none;">Chơi lại
+            </button>
+        </div>
+    </div>
+    <script src="js/guess_cooldown.js"></script>
+    <script src="js/one_two_three.js"></script>
+</body>
+</html>

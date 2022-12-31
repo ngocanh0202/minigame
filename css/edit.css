@@ -56,3 +56,26 @@ label{
     border: 3px;
     color:aliceblue;
 }
+.general_guess .keobuabao {
+    display: flex;
+    flex-direction: row;
+	justify-content: center;
+}
+.general_guess .keobuabao input{
+    height: 100px;
+    width: 100px;
+}
+.general_guess .keobuabao .kbbcot1{
+    height: 100px;
+    width: 100px;
+    margin-right: 20px;
+}
+.general_guess .keobuabao #kbbcot2{
+    height: 100px;
+    width: 100px;
+    margin-right: 20px;
+}
+.general_guess .keobuabao .kbbcot3{
+    height: 100px;
+    width: 100px;
+}
