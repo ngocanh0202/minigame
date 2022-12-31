@@ -1,7 +1,6 @@
 //document.getElementById("o3").innerHTML = document.getElementById("o1").textContent
 var a = Math.floor(Math.random() * 10);
 var b = Math.floor(Math.random() * 10);
-var c = Math.floor(Math.random() * 3);
 document.getElementById("o1").innerHTML = a
 document.getElementById("o2").innerHTML = b
 
