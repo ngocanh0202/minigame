@@ -11,8 +11,6 @@ function sosanh(c){
     }
 }
 function point(inpu,points,a,c){
-    if(a == inpu)
-        return points;
     if(c==1)//>
         if(a>inpu)
         {
