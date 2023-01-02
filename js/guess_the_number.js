@@ -16,7 +16,7 @@ function point(a,b,inpu,p){
         return p;
     }
     else{
-        if(p == 0)
+        if(p != 0)
             return 0;
         else{
             p -=1
