@@ -1,9 +1,14 @@
 //document.getElementById("o3").innerHTML = document.getElementById("o1").textContent
+
 var a = Math.floor(Math.random() * 10);
 var b = Math.floor(Math.random() * 10);
-document.getElementById("o1").innerHTML = a
-document.getElementById("o2").innerHTML = b
-
+function whatis(){
+    document.getElementById("o1").innerHTML = a+""
+    document.getElementById("o2").innerHTML = b+""
+    }
+    window.onload = function () {
+    whatis();
+    }
 function point(a,b,inpu,p){
     var c = a + b
     if(c == inpu){
@@ -19,6 +24,7 @@ function point(a,b,inpu,p){
         }
     }
 }
+module.exports = point
 function start(){
     document.getElementById("points").innerHTML = 0
 }
