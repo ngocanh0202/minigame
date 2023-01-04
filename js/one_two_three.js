@@ -25,31 +25,47 @@ function replace(x){
     
     document.getElementById('kbbcot2').appendChild(yourchoose);
 }
-function choose(x){
+function logic(x,a){
     if(a == 1){
         if(x == 1)
-            document.getElementById("ketqua").innerHTML = "Hòa!"
+            return 1
         if(x == 2)
-            document.getElementById("ketqua").innerHTML = "bạn thua!"
+            return 0
         if(x == 3)
-            document.getElementById("ketqua").innerHTML = "Bạn thắng!"
+            return 2
     }
     if(a == 2){
         if(x == 1)
-            document.getElementById("ketqua").innerHTML = "Bạn thắng!"
+            return 2
         if(x == 2)
-            document.getElementById("ketqua").innerHTML = "Hòa!"
+            return 1
         if(x == 3)
-            document.getElementById("ketqua").innerHTML = "Bạn thua!"
+            return 0
     }
     if(a == 3){
         if(x == 1)
-            document.getElementById("ketqua").innerHTML = "Bạn thua!"
+            return 0
         if(x == 2)
-            document.getElementById("ketqua").innerHTML = "Bạn thắng!"
+            return 2
         if(x == 3)
-            document.getElementById("ketqua").innerHTML = "Hòa!"
+            return 1
     }
+}
+module.exports = logic
+//1 thua 2 thang 3 hoa
+function choose(x){
+    switch(logic(x,a)){
+        case 1: 
+            document.getElementById("ketqua").innerHTML = "Bạn thua!";
+            break;
+        case 2:
+            document.getElementById("ketqua").innerHTML = "Bạn thắng!"
+            break;
+        case 3:
+            document.getElementById("ketqua").innerHTML = "Hòa!"
+            break;
+    }
+    logic(x,a)
     imgAI()
     replace(x)
     var ag = document.getElementById("again");
