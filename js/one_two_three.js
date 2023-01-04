@@ -1,4 +1,4 @@
-//1 bua 2 keo 3 bao
+
 var a = Math.floor(Math.random() * 3)+1;
 function imgAI(){
     if(a==1)
@@ -25,6 +25,8 @@ function replace(x){
     
     document.getElementById('kbbcot2').appendChild(yourchoose);
 }
+//1 bua 2 keo 3 bao
+//0 thua 1 hoa 2 thang
 function logic(x,a){
     if(a == 1){
         if(x == 1)
@@ -52,16 +54,16 @@ function logic(x,a){
     }
 }
 module.exports = logic
-//1 thua 2 thang 3 hoa
+
 function choose(x){
     switch(logic(x,a)){
-        case 1: 
+        case 0: 
             document.getElementById("ketqua").innerHTML = "Bạn thua!";
             break;
         case 2:
             document.getElementById("ketqua").innerHTML = "Bạn thắng!"
             break;
-        case 3:
+        case 1:
             document.getElementById("ketqua").innerHTML = "Hòa!"
             break;
     }
